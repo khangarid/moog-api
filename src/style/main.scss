@@ -22,7 +22,6 @@ body {
   table {
     margin: 0;
     padding: 0;
-    width: 400px;
     list-style: none;
 
     tr {
@@ -66,10 +65,11 @@ body {
             font-size: 2rem;
             margin: 0;
             font-weight: 100;
-            letter-spacing: 0.8rem;
+            letter-spacing: 0.5rem;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+            width: 600px;
           }
 
           small {

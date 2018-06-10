@@ -25,577 +25,577 @@
 }
 
 #logo .text:nth-child(1) {
-  color: #c3285a;
-  clip-path: polygon(-1% -3%, 10% -2%, 8% 52%, -2% 71%);
+  color: #7128a1;
+  clip-path: polygon(-2% -5%, 8% -17%, 6% 55%, -2% 79%);
   filter: blur(0px);
 }
 
 #logo .text:nth-child(1) .text_inner1 {
-  animation: vertical 1023ms 76ms ease-in-out infinite alternate;
+  animation: vertical 1527ms 53ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(1) .text_inner2 {
-  animation: horizontal 745ms 33ms ease-in-out infinite alternate;
+  animation: horizontal 1314ms 37ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(2) {
-  color: #8828de;
-  clip-path: polygon(3% -2%, 14% -30%, 14% 55%, 3% 51%);
-  filter: blur(-1px);
-}
-
-#logo .text:nth-child(2) .text_inner1 {
-  animation: vertical 1000ms 63ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(2) .text_inner2 {
-  animation: horizontal 1125ms 34ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(3) {
-  color: #7028bd;
-  clip-path: polygon(9% -5%, 20% -18%, 19% 52%, 8% 55%);
-  filter: blur(3px);
-}
-
-#logo .text:nth-child(3) .text_inner1 {
-  animation: vertical 786ms 27ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(3) .text_inner2 {
-  animation: horizontal 1318ms 77ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(4) {
-  color: #a028bc;
-  clip-path: polygon(13% -2%, 24% -18%, 23% 55%, 14% 78%);
-  filter: blur(9px);
-}
-
-#logo .text:nth-child(4) .text_inner1 {
-  animation: vertical 1096ms 47ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(4) .text_inner2 {
-  animation: horizontal 933ms 33ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(5) {
-  color: #38287e;
-  clip-path: polygon(18% -4%, 29% -28%, 30% 55%, 18% 78%);
-  filter: blur(2px);
-}
-
-#logo .text:nth-child(5) .text_inner1 {
-  animation: vertical 746ms 19ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(5) .text_inner2 {
-  animation: horizontal 863ms 81ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(6) {
-  color: #57284c;
-  clip-path: polygon(24% -1%, 33% -9%, 33% 52%, 24% 79%);
-  filter: blur(10px);
-}
-
-#logo .text:nth-child(6) .text_inner1 {
-  animation: vertical 1680ms 98ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(6) .text_inner2 {
-  animation: horizontal 1340ms 11ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(7) {
-  color: #a328a0;
-  clip-path: polygon(28% -5%, 39% -6%, 40% 54%, 29% 65%);
-  filter: blur(5px);
-}
-
-#logo .text:nth-child(7) .text_inner1 {
-  animation: vertical 1265ms 7ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(7) .text_inner2 {
-  animation: horizontal 1246ms 68ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(8) {
-  color: #9f28d7;
-  clip-path: polygon(33% -1%, 45% -27%, 41% 53%, 34% 53%);
-  filter: blur(6px);
-}
-
-#logo .text:nth-child(8) .text_inner1 {
-  animation: vertical 890ms 14ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(8) .text_inner2 {
-  animation: horizontal 1119ms 39ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(9) {
-  color: #5d28ad;
-  clip-path: polygon(39% -2%, 48% -8%, 49% 53%, 38% 58%);
-  filter: blur(3px);
-}
-
-#logo .text:nth-child(9) .text_inner1 {
-  animation: vertical 1277ms 12ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(9) .text_inner2 {
-  animation: horizontal 724ms 15ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(10) {
-  color: #c128c3;
-  clip-path: polygon(43% -5%, 55% -21%, 52% 53%, 44% 61%);
+  color: #a928dd;
+  clip-path: polygon(4% -3%, 11% -28%, 14% 53%, 4% 52%);
   filter: blur(0px);
 }
 
+#logo .text:nth-child(2) .text_inner1 {
+  animation: vertical 1667ms 40ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(2) .text_inner2 {
+  animation: horizontal 1608ms 17ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(3) {
+  color: #d02845;
+  clip-path: polygon(8% -5%, 19% -26%, 17% 51%, 8% 78%);
+  filter: blur(-6px);
+}
+
+#logo .text:nth-child(3) .text_inner1 {
+  animation: vertical 1601ms 42ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(3) .text_inner2 {
+  animation: horizontal 903ms 26ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(4) {
+  color: #4528c3;
+  clip-path: polygon(13% -4%, 25% -10%, 25% 51%, 14% 77%);
+  filter: blur(2px);
+}
+
+#logo .text:nth-child(4) .text_inner1 {
+  animation: vertical 938ms 32ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(4) .text_inner2 {
+  animation: horizontal 1367ms 83ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(5) {
+  color: #dd289a;
+  clip-path: polygon(19% -2%, 29% -23%, 30% 54%, 19% 80%);
+  filter: blur(-2px);
+}
+
+#logo .text:nth-child(5) .text_inner1 {
+  animation: vertical 1261ms 10ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(5) .text_inner2 {
+  animation: horizontal 745ms 21ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(6) {
+  color: #d82890;
+  clip-path: polygon(24% -5%, 31% -15%, 35% 54%, 23% 73%);
+  filter: blur(5px);
+}
+
+#logo .text:nth-child(6) .text_inner1 {
+  animation: vertical 939ms 62ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(6) .text_inner2 {
+  animation: horizontal 1188ms 61ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(7) {
+  color: #6328f0;
+  clip-path: polygon(29% -4%, 40% -26%, 38% 51%, 29% 61%);
+  filter: blur(7px);
+}
+
+#logo .text:nth-child(7) .text_inner1 {
+  animation: vertical 1446ms 60ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(7) .text_inner2 {
+  animation: horizontal 1655ms 41ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(8) {
+  color: #4a28e0;
+  clip-path: polygon(33% -4%, 44% -11%, 45% 52%, 33% 68%);
+  filter: blur(-4px);
+}
+
+#logo .text:nth-child(8) .text_inner1 {
+  animation: vertical 1295ms 97ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(8) .text_inner2 {
+  animation: horizontal 1609ms 32ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(9) {
+  color: #a328d7;
+  clip-path: polygon(39% -3%, 46% -10%, 50% 54%, 39% 64%);
+  filter: blur(7px);
+}
+
+#logo .text:nth-child(9) .text_inner1 {
+  animation: vertical 1020ms 98ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(9) .text_inner2 {
+  animation: horizontal 999ms 13ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(10) {
+  color: #b728da;
+  clip-path: polygon(43% -2%, 53% -22%, 54% 51%, 44% 55%);
+  filter: blur(10px);
+}
+
 #logo .text:nth-child(10) .text_inner1 {
-  animation: vertical 1182ms 33ms ease-in-out infinite alternate;
+  animation: vertical 1265ms 99ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(10) .text_inner2 {
-  animation: horizontal 1246ms 12ms ease-in-out infinite alternate;
+  animation: horizontal 1164ms 36ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(11) {
-  color: #4028bc;
-  clip-path: polygon(48% -5%, 59% -2%, 58% 55%, 49% 68%);
-  filter: blur(3px);
+  color: #4f28c2;
+  clip-path: polygon(49% -5%, 60% -16%, 60% 52%, 49% 71%);
+  filter: blur(1px);
 }
 
 #logo .text:nth-child(11) .text_inner1 {
-  animation: vertical 993ms 60ms ease-in-out infinite alternate;
+  animation: vertical 1236ms 5ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(11) .text_inner2 {
-  animation: horizontal 1551ms 16ms ease-in-out infinite alternate;
+  animation: horizontal 1227ms 12ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(12) {
-  color: #682887;
-  clip-path: polygon(53% -2%, 63% -25%, 62% 53%, 54% 63%);
-  filter: blur(-5px);
+  color: #9428e8;
+  clip-path: polygon(53% -5%, 64% -18%, 63% 54%, 54% 60%);
+  filter: blur(3px);
 }
 
 #logo .text:nth-child(12) .text_inner1 {
-  animation: vertical 729ms 72ms ease-in-out infinite alternate;
+  animation: vertical 1406ms 85ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(12) .text_inner2 {
-  animation: horizontal 927ms 57ms ease-in-out infinite alternate;
+  animation: horizontal 1189ms 25ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(13) {
-  color: #9328f9;
-  clip-path: polygon(58% -2%, 69% -14%, 67% 54%, 59% 69%);
-  filter: blur(-1px);
+  color: #f8288c;
+  clip-path: polygon(58% -4%, 69% -13%, 69% 54%, 58% 60%);
+  filter: blur(1px);
 }
 
 #logo .text:nth-child(13) .text_inner1 {
-  animation: vertical 1696ms 59ms ease-in-out infinite alternate;
+  animation: vertical 1257ms 57ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(13) .text_inner2 {
-  animation: horizontal 1430ms 89ms ease-in-out infinite alternate;
+  animation: horizontal 1655ms 59ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(14) {
-  color: #4628cc;
-  clip-path: polygon(64% -4%, 72% -16%, 72% 53%, 64% 79%);
-  filter: blur(-8px);
+  color: #a728db;
+  clip-path: polygon(64% -3%, 71% -25%, 71% 52%, 64% 61%);
+  filter: blur(7px);
 }
 
 #logo .text:nth-child(14) .text_inner1 {
-  animation: vertical 1532ms 9ms ease-in-out infinite alternate;
+  animation: vertical 1089ms 6ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(14) .text_inner2 {
-  animation: horizontal 1162ms 36ms ease-in-out infinite alternate;
+  animation: horizontal 905ms 97ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(15) {
-  color: #8428e8;
-  clip-path: polygon(68% -4%, 78% -11%, 78% 52%, 69% 53%);
+  color: #492872;
+  clip-path: polygon(69% -3%, 79% -10%, 79% 54%, 69% 76%);
   filter: blur(-3px);
 }
 
 #logo .text:nth-child(15) .text_inner1 {
-  animation: vertical 799ms 33ms ease-in-out infinite alternate;
+  animation: vertical 1435ms 71ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(15) .text_inner2 {
-  animation: horizontal 1553ms 2ms ease-in-out infinite alternate;
+  animation: horizontal 1570ms 81ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(16) {
-  color: #a42848;
-  clip-path: polygon(74% -1%, 82% -29%, 81% 53%, 73% 73%);
-  filter: blur(7px);
+  color: #f128aa;
+  clip-path: polygon(73% -2%, 81% -20%, 82% 55%, 73% 56%);
+  filter: blur(-8px);
 }
 
 #logo .text:nth-child(16) .text_inner1 {
-  animation: vertical 793ms 84ms ease-in-out infinite alternate;
+  animation: vertical 1329ms 81ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(16) .text_inner2 {
-  animation: horizontal 1598ms 19ms ease-in-out infinite alternate;
+  animation: horizontal 904ms 79ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(17) {
-  color: #c328e5;
-  clip-path: polygon(79% -2%, 90% -7%, 87% 55%, 78% 71%);
-  filter: blur(8px);
+  color: #b428b0;
+  clip-path: polygon(78% -5%, 90% -5%, 87% 53%, 78% 53%);
+  filter: blur(-7px);
 }
 
 #logo .text:nth-child(17) .text_inner1 {
-  animation: vertical 1210ms 80ms ease-in-out infinite alternate;
+  animation: vertical 1052ms 47ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(17) .text_inner2 {
-  animation: horizontal 1320ms 57ms ease-in-out infinite alternate;
+  animation: horizontal 1420ms 4ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(18) {
-  color: #bd2865;
-  clip-path: polygon(84% -3%, 94% -14%, 91% 53%, 84% 56%);
-  filter: blur(8px);
-}
-
-#logo .text:nth-child(18) .text_inner1 {
-  animation: vertical 1086ms 35ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(18) .text_inner2 {
-  animation: horizontal 1468ms 93ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(19) {
-  color: #c828c2;
-  clip-path: polygon(89% -5%, 99% -17%, 97% 53%, 88% 73%);
-  filter: blur(-9px);
-}
-
-#logo .text:nth-child(19) .text_inner1 {
-  animation: vertical 1208ms 88ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(19) .text_inner2 {
-  animation: horizontal 1352ms 19ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(20) {
-  color: #5528a6;
-  clip-path: polygon(93% -1%, 105% -30%, 104% 53%, 93% 75%);
-  filter: blur(1px);
-}
-
-#logo .text:nth-child(20) .text_inner1 {
-  animation: vertical 1062ms 63ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(20) .text_inner2 {
-  animation: horizontal 1563ms 91ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(21) {
-  color: #ae283a;
-  clip-path: polygon(-1% 47%, 9% 49%, 8% 104%, -1% 127%);
-  filter: blur(1px);
-}
-
-#logo .text:nth-child(21) .text_inner1 {
-  animation: vertical 1162ms 57ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(21) .text_inner2 {
-  animation: horizontal 1470ms 81ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(22) {
-  color: #c42883;
-  clip-path: polygon(3% 48%, 14% 47%, 14% 104%, 3% 119%);
-  filter: blur(7px);
-}
-
-#logo .text:nth-child(22) .text_inner1 {
-  animation: vertical 1099ms 76ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(22) .text_inner2 {
-  animation: horizontal 1106ms 90ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(23) {
-  color: #a6288b;
-  clip-path: polygon(8% 45%, 18% 21%, 19% 103%, 9% 102%);
-  filter: blur(-5px);
-}
-
-#logo .text:nth-child(23) .text_inner1 {
-  animation: vertical 885ms 90ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(23) .text_inner2 {
-  animation: horizontal 845ms 58ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(24) {
-  color: #a12899;
-  clip-path: polygon(13% 45%, 24% 45%, 24% 103%, 14% 102%);
-  filter: blur(-3px);
-}
-
-#logo .text:nth-child(24) .text_inner1 {
-  animation: vertical 857ms 77ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(24) .text_inner2 {
-  animation: horizontal 1646ms 61ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(25) {
-  color: #cb287d;
-  clip-path: polygon(18% 45%, 28% 40%, 27% 102%, 19% 115%);
+  color: #8f286a;
+  clip-path: polygon(83% -5%, 93% -27%, 94% 52%, 83% 58%);
   filter: blur(-6px);
 }
 
-#logo .text:nth-child(25) .text_inner1 {
-  animation: vertical 853ms 43ms ease-in-out infinite alternate;
+#logo .text:nth-child(18) .text_inner1 {
+  animation: vertical 936ms 43ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(25) .text_inner2 {
-  animation: horizontal 723ms 10ms ease-in-out infinite alternate;
+#logo .text:nth-child(18) .text_inner2 {
+  animation: horizontal 1503ms 3ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(26) {
-  color: #a228e0;
-  clip-path: polygon(23% 48%, 32% 40%, 32% 103%, 24% 104%);
-  filter: blur(1px);
+#logo .text:nth-child(19) {
+  color: #8d28b5;
+  clip-path: polygon(88% -2%, 99% -8%, 100% 52%, 89% 58%);
+  filter: blur(-7px);
 }
 
-#logo .text:nth-child(26) .text_inner1 {
-  animation: vertical 1341ms 34ms ease-in-out infinite alternate;
+#logo .text:nth-child(19) .text_inner1 {
+  animation: vertical 1170ms 70ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(26) .text_inner2 {
-  animation: horizontal 814ms 91ms ease-in-out infinite alternate;
+#logo .text:nth-child(19) .text_inner2 {
+  animation: horizontal 976ms 35ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(27) {
-  color: #d8285c;
-  clip-path: polygon(28% 49%, 40% 42%, 37% 101%, 28% 109%);
-  filter: blur(-5px);
+#logo .text:nth-child(20) {
+  color: #fc2840;
+  clip-path: polygon(93% -1%, 105% -7%, 101% 51%, 94% 51%);
+  filter: blur(2px);
 }
 
-#logo .text:nth-child(27) .text_inner1 {
-  animation: vertical 723ms 18ms ease-in-out infinite alternate;
+#logo .text:nth-child(20) .text_inner1 {
+  animation: vertical 1283ms 38ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(27) .text_inner2 {
-  animation: horizontal 1626ms 51ms ease-in-out infinite alternate;
+#logo .text:nth-child(20) .text_inner2 {
+  animation: horizontal 1578ms 99ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(28) {
-  color: #4428f8;
-  clip-path: polygon(33% 46%, 41% 45%, 43% 105%, 33% 104%);
-  filter: blur(-3px);
+#logo .text:nth-child(21) {
+  color: #fb28bb;
+  clip-path: polygon(-1% 45%, 10% 29%, 7% 105%, -1% 115%);
+  filter: blur(2px);
 }
 
-#logo .text:nth-child(28) .text_inner1 {
-  animation: vertical 1357ms 29ms ease-in-out infinite alternate;
+#logo .text:nth-child(21) .text_inner1 {
+  animation: vertical 1087ms 23ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(28) .text_inner2 {
-  animation: horizontal 1312ms 65ms ease-in-out infinite alternate;
+#logo .text:nth-child(21) .text_inner2 {
+  animation: horizontal 1529ms 44ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(29) {
-  color: #b92839;
-  clip-path: polygon(38% 48%, 46% 26%, 49% 105%, 39% 118%);
-  filter: blur(6px);
+#logo .text:nth-child(22) {
+  color: #6728c2;
+  clip-path: polygon(3% 49%, 13% 37%, 15% 102%, 4% 117%);
+  filter: blur(-2px);
 }
 
-#logo .text:nth-child(29) .text_inner1 {
-  animation: vertical 1115ms 95ms ease-in-out infinite alternate;
+#logo .text:nth-child(22) .text_inner1 {
+  animation: vertical 1456ms 33ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(29) .text_inner2 {
-  animation: horizontal 1327ms 18ms ease-in-out infinite alternate;
+#logo .text:nth-child(22) .text_inner2 {
+  animation: horizontal 1350ms 20ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(30) {
-  color: #cb28cb;
-  clip-path: polygon(43% 48%, 51% 39%, 53% 102%, 43% 116%);
-  filter: blur(-5px);
-}
-
-#logo .text:nth-child(30) .text_inner1 {
-  animation: vertical 1189ms 10ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(30) .text_inner2 {
-  animation: horizontal 786ms 82ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(31) {
-  color: #4e284d;
-  clip-path: polygon(48% 47%, 60% 42%, 58% 102%, 48% 109%);
-  filter: blur(0px);
-}
-
-#logo .text:nth-child(31) .text_inner1 {
-  animation: vertical 1107ms 81ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(31) .text_inner2 {
-  animation: horizontal 1631ms 22ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(32) {
-  color: #4f289a;
-  clip-path: polygon(53% 49%, 61% 31%, 62% 104%, 53% 125%);
-  filter: blur(4px);
-}
-
-#logo .text:nth-child(32) .text_inner1 {
-  animation: vertical 784ms 4ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(32) .text_inner2 {
-  animation: horizontal 1002ms 49ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(33) {
-  color: #ae28be;
-  clip-path: polygon(59% 49%, 67% 29%, 67% 105%, 59% 103%);
-  filter: blur(7px);
-}
-
-#logo .text:nth-child(33) .text_inner1 {
-  animation: vertical 1237ms 9ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(33) .text_inner2 {
-  animation: horizontal 1316ms 56ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(34) {
-  color: #d828de;
-  clip-path: polygon(64% 49%, 71% 37%, 74% 104%, 64% 121%);
-  filter: blur(0px);
-}
-
-#logo .text:nth-child(34) .text_inner1 {
-  animation: vertical 834ms 83ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(34) .text_inner2 {
-  animation: horizontal 1533ms 54ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(35) {
-  color: #cd28fc;
-  clip-path: polygon(68% 48%, 76% 44%, 76% 103%, 68% 121%);
-  filter: blur(-9px);
-}
-
-#logo .text:nth-child(35) .text_inner1 {
-  animation: vertical 1453ms 32ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(35) .text_inner2 {
-  animation: horizontal 878ms 59ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(36) {
-  color: #7d28f2;
-  clip-path: polygon(73% 48%, 81% 48%, 83% 103%, 74% 124%);
+#logo .text:nth-child(23) {
+  color: #bd2898;
+  clip-path: polygon(9% 47%, 20% 39%, 16% 105%, 9% 119%);
   filter: blur(10px);
 }
 
-#logo .text:nth-child(36) .text_inner1 {
-  animation: vertical 1518ms 63ms ease-in-out infinite alternate;
+#logo .text:nth-child(23) .text_inner1 {
+  animation: vertical 1133ms 27ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(36) .text_inner2 {
-  animation: horizontal 1497ms 1ms ease-in-out infinite alternate;
+#logo .text:nth-child(23) .text_inner2 {
+  animation: horizontal 1614ms 8ms ease-in-out infinite alternate;
 }
 
-#logo .text:nth-child(37) {
-  color: #482844;
-  clip-path: polygon(78% 47%, 86% 46%, 86% 103%, 78% 121%);
-  filter: blur(3px);
-}
-
-#logo .text:nth-child(37) .text_inner1 {
-  animation: vertical 1515ms 2ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(37) .text_inner2 {
-  animation: horizontal 790ms 24ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(38) {
-  color: #702855;
-  clip-path: polygon(84% 46%, 93% 32%, 94% 104%, 84% 114%);
-  filter: blur(-3px);
-}
-
-#logo .text:nth-child(38) .text_inner1 {
-  animation: vertical 809ms 79ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(38) .text_inner2 {
-  animation: horizontal 1625ms 26ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(39) {
-  color: #90288e;
-  clip-path: polygon(88% 45%, 98% 30%, 97% 103%, 89% 124%);
-  filter: blur(7px);
-}
-
-#logo .text:nth-child(39) .text_inner1 {
-  animation: vertical 1165ms 10ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(39) .text_inner2 {
-  animation: horizontal 1554ms 18ms ease-in-out infinite alternate;
-}
-
-#logo .text:nth-child(40) {
-  color: #ef286e;
-  clip-path: polygon(93% 47%, 105% 45%, 105% 103%, 94% 127%);
+#logo .text:nth-child(24) {
+  color: #73288d;
+  clip-path: polygon(14% 48%, 22% 21%, 22% 102%, 14% 103%);
   filter: blur(8px);
 }
 
+#logo .text:nth-child(24) .text_inner1 {
+  animation: vertical 1434ms 3ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(24) .text_inner2 {
+  animation: horizontal 1485ms 25ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(25) {
+  color: #70287c;
+  clip-path: polygon(19% 47%, 27% 28%, 29% 105%, 18% 123%);
+  filter: blur(-5px);
+}
+
+#logo .text:nth-child(25) .text_inner1 {
+  animation: vertical 1472ms 86ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(25) .text_inner2 {
+  animation: horizontal 895ms 78ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(26) {
+  color: #bc28e3;
+  clip-path: polygon(24% 45%, 33% 20%, 34% 103%, 23% 101%);
+  filter: blur(6px);
+}
+
+#logo .text:nth-child(26) .text_inner1 {
+  animation: vertical 1244ms 51ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(26) .text_inner2 {
+  animation: horizontal 898ms 7ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(27) {
+  color: #df2861;
+  clip-path: polygon(29% 46%, 40% 34%, 37% 104%, 29% 121%);
+  filter: blur(5px);
+}
+
+#logo .text:nth-child(27) .text_inner1 {
+  animation: vertical 1446ms 73ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(27) .text_inner2 {
+  animation: horizontal 729ms 51ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(28) {
+  color: #662863;
+  clip-path: polygon(33% 48%, 44% 42%, 42% 102%, 34% 103%);
+  filter: blur(8px);
+}
+
+#logo .text:nth-child(28) .text_inner1 {
+  animation: vertical 1374ms 87ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(28) .text_inner2 {
+  animation: horizontal 1439ms 90ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(29) {
+  color: #6a28cf;
+  clip-path: polygon(38% 47%, 50% 48%, 48% 103%, 39% 105%);
+  filter: blur(-2px);
+}
+
+#logo .text:nth-child(29) .text_inner1 {
+  animation: vertical 1074ms 38ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(29) .text_inner2 {
+  animation: horizontal 1295ms 4ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(30) {
+  color: #7a284e;
+  clip-path: polygon(44% 45%, 52% 45%, 54% 101%, 44% 129%);
+  filter: blur(1px);
+}
+
+#logo .text:nth-child(30) .text_inner1 {
+  animation: vertical 1436ms 9ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(30) .text_inner2 {
+  animation: horizontal 1073ms 95ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(31) {
+  color: #e128e2;
+  clip-path: polygon(49% 48%, 60% 29%, 60% 103%, 48% 115%);
+  filter: blur(9px);
+}
+
+#logo .text:nth-child(31) .text_inner1 {
+  animation: vertical 1087ms 3ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(31) .text_inner2 {
+  animation: horizontal 803ms 92ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(32) {
+  color: #e02892;
+  clip-path: polygon(54% 46%, 65% 30%, 64% 101%, 54% 117%);
+  filter: blur(1px);
+}
+
+#logo .text:nth-child(32) .text_inner1 {
+  animation: vertical 767ms 62ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(32) .text_inner2 {
+  animation: horizontal 800ms 33ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(33) {
+  color: #f828ed;
+  clip-path: polygon(59% 48%, 69% 31%, 70% 104%, 58% 117%);
+  filter: blur(0px);
+}
+
+#logo .text:nth-child(33) .text_inner1 {
+  animation: vertical 1666ms 17ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(33) .text_inner2 {
+  animation: horizontal 1578ms 68ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(34) {
+  color: #842899;
+  clip-path: polygon(64% 46%, 73% 38%, 74% 104%, 64% 102%);
+  filter: blur(-1px);
+}
+
+#logo .text:nth-child(34) .text_inner1 {
+  animation: vertical 844ms 59ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(34) .text_inner2 {
+  animation: horizontal 1547ms 73ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(35) {
+  color: #4928dd;
+  clip-path: polygon(69% 45%, 80% 31%, 78% 104%, 68% 106%);
+  filter: blur(-1px);
+}
+
+#logo .text:nth-child(35) .text_inner1 {
+  animation: vertical 1102ms 68ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(35) .text_inner2 {
+  animation: horizontal 1129ms 61ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(36) {
+  color: #c728d3;
+  clip-path: polygon(73% 47%, 84% 48%, 83% 104%, 73% 102%);
+  filter: blur(2px);
+}
+
+#logo .text:nth-child(36) .text_inner1 {
+  animation: vertical 1415ms 92ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(36) .text_inner2 {
+  animation: horizontal 1313ms 54ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(37) {
+  color: #d22886;
+  clip-path: polygon(79% 48%, 88% 32%, 86% 104%, 79% 120%);
+  filter: blur(1px);
+}
+
+#logo .text:nth-child(37) .text_inner1 {
+  animation: vertical 1667ms 85ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(37) .text_inner2 {
+  animation: horizontal 817ms 1ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(38) {
+  color: #752878;
+  clip-path: polygon(84% 47%, 92% 20%, 94% 104%, 83% 122%);
+  filter: blur(3px);
+}
+
+#logo .text:nth-child(38) .text_inner1 {
+  animation: vertical 1315ms 87ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(38) .text_inner2 {
+  animation: horizontal 975ms 32ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(39) {
+  color: #a028bf;
+  clip-path: polygon(89% 47%, 97% 46%, 98% 103%, 89% 129%);
+  filter: blur(9px);
+}
+
+#logo .text:nth-child(39) .text_inner1 {
+  animation: vertical 1284ms 85ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(39) .text_inner2 {
+  animation: horizontal 874ms 88ms ease-in-out infinite alternate;
+}
+
+#logo .text:nth-child(40) {
+  color: #7b28d0;
+  clip-path: polygon(93% 46%, 101% 25%, 102% 101%, 93% 130%);
+  filter: blur(-5px);
+}
+
 #logo .text:nth-child(40) .text_inner1 {
-  animation: vertical 900ms 37ms ease-in-out infinite alternate;
+  animation: vertical 749ms 53ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(40) .text_inner2 {
-  animation: horizontal 1524ms 86ms ease-in-out infinite alternate;
+  animation: horizontal 1484ms 87ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(41) {
-  color: #bb2873;
-  clip-path: polygon(-2% 99%, 8% 77%, 9% 154%, -2% 166%);
-  filter: blur(-3px);
+  color: #4e286b;
+  clip-path: polygon(-2% 98%, 8% 76%, 9% 153%, -2% 160%);
+  filter: blur(-6px);
 }
 
 #logo .text:nth-child(41) .text_inner1 {
-  animation: vertical 1293ms 50ms ease-in-out infinite alternate;
+  animation: vertical 1369ms 41ms ease-in-out infinite alternate;
 }
 
 #logo .text:nth-child(41) .text_inner2 {
-  animation: horizontal 1624ms 20ms ease-in-out infinite alternate;
+  animation: horizontal 1173ms 27ms ease-in-out infinite alternate;
 }
 
 @keyframes horizontal {
@@ -635,7 +635,6 @@ body {
 .list table {
   margin: 0;
   padding: 0;
-  width: 400px;
   list-style: none;
 }
 
@@ -681,10 +680,11 @@ body {
   font-size: 2rem;
   margin: 0;
   font-weight: 100;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 600px;
 }
 
 .list table tr td:last-child small {
