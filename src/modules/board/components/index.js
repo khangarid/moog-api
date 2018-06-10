@@ -1,3 +1,4 @@
 import Board from './Board';
+import List from './List';
 
-export { Board };
+export { Board, List };

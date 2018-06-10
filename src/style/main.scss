@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700&amp;subset=cyrillic,cyrillic-ext');
+@import './logo';
+
+$color-main: #ef288f;
+$color-secondary: #5628f3;
+
+* {
+  font-family: 'Arimo', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #111111;
+  color: #eee;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  table {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    list-style: none;
+
+    tr {
+      &:hover {
+        cursor: pointer;
+
+        h5, small, td:first-child span {
+          background-color: rgba(86, 40, 243, 0.5);
+          color: #eee;
+          box-shadow: 0 0 0 5px rgba(86, 40, 243, 0.5);
+        }
+
+        td:first-child span {
+          right: 0;
+        }
+      }
+
+      td {
+        padding: 0;
+        border-bottom: 1.5rem solid transparent;
+
+        &:first-child {
+          font-size: 4rem;
+          line-height: 4rem;
+          text-align: right;
+          color: $color-main;
+          font-weight: 600;
+          overflow: hidden;
+
+          span {
+            transition: .1s right ease-in-out;
+            position: relative;
+            right: -16px;
+          }
+        }
+
+        &:last-child {
+          h5 {
+            display: inline-block;
+            line-height: 2rem;
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 100;
+            letter-spacing: 0.8rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+          small {
+            font-weight: 100;
+            line-height: 2rem;
+            color: #bbb;
+            position: relative;
+            top: -6px;
+          }
+        }
+      }
+    }
+  }
+
+}

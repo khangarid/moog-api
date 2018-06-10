@@ -1,5 +1,4 @@
 import React from 'react';
-import { Layout, BackTop } from 'antd';
 import { PropTypes } from 'prop-types';
 import Footer from './Footer';
 import Header from './Header';
@@ -7,15 +6,13 @@ import Header from './Header';
 class MainLayout extends React.Component {
   render() {
     return (
-      <Layout>
+      <div>
         <Header />
 
-        <Layout.Content>{this.props.children}</Layout.Content>
-
-        <BackTop />
+        <div>{this.props.children}</div>
 
         <Footer />
-      </Layout>
+      </div>
     );
   }
 }
