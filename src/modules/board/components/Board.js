@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import List from './List';
+import { Logo } from 'modules/ui';
 
 class Board extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Board extends React.Component {
   render() {
     const { list } = this.props;
 
-    return <List data={list} />;
+    return [<Logo key={0} />, <List key={2} data={list} />];
   }
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router';
 
 class List extends React.Component {
   constructor(props) {
@@ -7,8 +8,10 @@ class List extends React.Component {
   }
 
   renderItem(item, i) {
+    const { history } = this.props;
+
     return (
-      <tr key={i}>
+      <tr key={i} onClick={() => history.push(`single/${i}`)}>
         <td>
           <span>{i}</span>
         </td>
@@ -34,7 +37,8 @@ class List extends React.Component {
 }
 
 List.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.array,
+  history: PropTypes.object
 };
 
-export default List;
+export default withRouter(List);
