@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import List from './List';
-import { Logo } from 'modules/ui';
+import { FloatingText } from 'modules/ui';
 
 class Board extends React.Component {
   constructor(props) {
@@ -11,12 +11,12 @@ class Board extends React.Component {
   render() {
     const { list } = this.props;
 
-    return [<Logo key={0} />, <List key={2} data={list} />];
+    return [<FloatingText key={0} />, <List key={2} data={list} />];
   }
 }
 
 Board.propTypes = {
-  list: PropTypes.object
+  list: PropTypes.array
 };
 
 export default Board;

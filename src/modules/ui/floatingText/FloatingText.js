@@ -20,17 +20,24 @@ const texts = (text, fontSize) => {
   return texts;
 };
 
-const logo = ({ text = 'Самбар', fontSize = '8rem' }) => {
+const floatingText = ({
+  text = 'Самбар',
+  fontSize = '8rem',
+  style,
+  classes
+}) => {
   return (
-    <div id="logo">
+    <div className={`floating-text ${classes}`} style={style}>
       <div className="inner">{texts(text, fontSize)}</div>
     </div>
   );
 };
 
-logo.propTypes = {
+floatingText.propTypes = {
   text: PropTypes.string,
-  fontSize: PropTypes.string
+  fontSize: PropTypes.string,
+  style: PropTypes.object,
+  classes: PropTypes.string
 };
 
-export default logo;
+export default floatingText;

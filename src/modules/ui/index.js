@@ -1,3 +1,3 @@
-import Logo from './logo/Logo';
+import FloatingText from './floatingText/FloatingText';
 
-export { Logo };
+export { FloatingText };
