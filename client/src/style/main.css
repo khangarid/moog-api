@@ -1,0 +1,751 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,400i,700&amp;subset=cyrillic,cyrillic-ext");
+.floating-text {
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.floating-text .inner {
+  transform: rotateZ(-4deg);
+}
+
+.floating-text .text {
+  position: absolute;
+  font-size: 8rem;
+  color: #fff;
+  line-height: 8rem;
+  font-family: 'Anton', sans-serif;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  letter-spacing: 0.5rem;
+  overflow: hidden;
+}
+
+.floating-text .text:nth-child(1) {
+  color: #dd289c;
+  clip-path: polygon(-2% -3%, 8% -4%, 6% 53%, -2% 54%);
+  filter: blur(6px);
+}
+
+.floating-text .text:nth-child(1) .text_inner1 {
+  animation: vertical 1375ms 37ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(1) .text_inner2 {
+  animation: horizontal 1444ms 74ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(2) {
+  color: #b92848;
+  clip-path: polygon(3% -5%, 11% -4%, 12% 52%, 4% 72%);
+  filter: blur(3px);
+}
+
+.floating-text .text:nth-child(2) .text_inner1 {
+  animation: vertical 1647ms 56ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(2) .text_inner2 {
+  animation: horizontal 740ms 65ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(3) {
+  color: #da287b;
+  clip-path: polygon(9% -3%, 20% -24%, 20% 55%, 8% 51%);
+  filter: blur(-2px);
+}
+
+.floating-text .text:nth-child(3) .text_inner1 {
+  animation: vertical 847ms 81ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(3) .text_inner2 {
+  animation: horizontal 1397ms 5ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(4) {
+  color: #5b28b6;
+  clip-path: polygon(13% -5%, 23% -29%, 21% 53%, 14% 61%);
+  filter: blur(-7px);
+}
+
+.floating-text .text:nth-child(4) .text_inner1 {
+  animation: vertical 1038ms 84ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(4) .text_inner2 {
+  animation: horizontal 904ms 59ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(5) {
+  color: #912868;
+  clip-path: polygon(19% -2%, 29% -14%, 30% 51%, 19% 57%);
+  filter: blur(-6px);
+}
+
+.floating-text .text:nth-child(5) .text_inner1 {
+  animation: vertical 743ms 49ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(5) .text_inner2 {
+  animation: horizontal 1249ms 8ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(6) {
+  color: #d62877;
+  clip-path: polygon(24% -2%, 35% -1%, 32% 51%, 23% 72%);
+  filter: blur(0px);
+}
+
+.floating-text .text:nth-child(6) .text_inner1 {
+  animation: vertical 1644ms 41ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(6) .text_inner2 {
+  animation: horizontal 1687ms 20ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(7) {
+  color: #f628c6;
+  clip-path: polygon(28% -1%, 40% -28%, 37% 51%, 29% 68%);
+  filter: blur(-8px);
+}
+
+.floating-text .text:nth-child(7) .text_inner1 {
+  animation: vertical 1501ms 88ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(7) .text_inner2 {
+  animation: horizontal 1394ms 63ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(8) {
+  color: #db2863;
+  clip-path: polygon(33% -3%, 41% -5%, 45% 51%, 33% 74%);
+  filter: blur(4px);
+}
+
+.floating-text .text:nth-child(8) .text_inner1 {
+  animation: vertical 1548ms 64ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(8) .text_inner2 {
+  animation: horizontal 1087ms 48ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(9) {
+  color: #6b28fb;
+  clip-path: polygon(39% -2%, 50% -14%, 50% 51%, 39% 55%);
+  filter: blur(1px);
+}
+
+.floating-text .text:nth-child(9) .text_inner1 {
+  animation: vertical 1585ms 41ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(9) .text_inner2 {
+  animation: horizontal 1465ms 71ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(10) {
+  color: #a4284f;
+  clip-path: polygon(44% -3%, 55% -12%, 51% 55%, 44% 71%);
+  filter: blur(9px);
+}
+
+.floating-text .text:nth-child(10) .text_inner1 {
+  animation: vertical 1228ms 59ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(10) .text_inner2 {
+  animation: horizontal 824ms 66ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(11) {
+  color: #9828c0;
+  clip-path: polygon(49% -2%, 60% -26%, 59% 55%, 48% 60%);
+  filter: blur(-1px);
+}
+
+.floating-text .text:nth-child(11) .text_inner1 {
+  animation: vertical 855ms 5ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(11) .text_inner2 {
+  animation: horizontal 1638ms 23ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(12) {
+  color: #6728c2;
+  clip-path: polygon(54% -1%, 61% -7%, 64% 52%, 54% 59%);
+  filter: blur(2px);
+}
+
+.floating-text .text:nth-child(12) .text_inner1 {
+  animation: vertical 1140ms 32ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(12) .text_inner2 {
+  animation: horizontal 1059ms 70ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(13) {
+  color: #402842;
+  clip-path: polygon(59% -4%, 70% -13%, 68% 52%, 58% 76%);
+  filter: blur(-4px);
+}
+
+.floating-text .text:nth-child(13) .text_inner1 {
+  animation: vertical 1260ms 53ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(13) .text_inner2 {
+  animation: horizontal 972ms 69ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(14) {
+  color: #8628aa;
+  clip-path: polygon(64% -5%, 74% -12%, 72% 53%, 64% 80%);
+  filter: blur(-3px);
+}
+
+.floating-text .text:nth-child(14) .text_inner1 {
+  animation: vertical 1220ms 58ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(14) .text_inner2 {
+  animation: horizontal 1095ms 27ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(15) {
+  color: #5228af;
+  clip-path: polygon(69% -1%, 76% -12%, 80% 51%, 69% 60%);
+  filter: blur(-9px);
+}
+
+.floating-text .text:nth-child(15) .text_inner1 {
+  animation: vertical 715ms 72ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(15) .text_inner2 {
+  animation: horizontal 1642ms 67ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(16) {
+  color: #db2875;
+  clip-path: polygon(74% -1%, 84% -19%, 84% 52%, 73% 66%);
+  filter: blur(4px);
+}
+
+.floating-text .text:nth-child(16) .text_inner1 {
+  animation: vertical 1481ms 30ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(16) .text_inner2 {
+  animation: horizontal 772ms 64ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(17) {
+  color: #5428c5;
+  clip-path: polygon(78% -3%, 89% -6%, 89% 54%, 78% 58%);
+  filter: blur(-9px);
+}
+
+.floating-text .text:nth-child(17) .text_inner1 {
+  animation: vertical 753ms 2ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(17) .text_inner2 {
+  animation: horizontal 1278ms 36ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(18) {
+  color: #ec283b;
+  clip-path: polygon(84% -4%, 95% -21%, 92% 52%, 84% 57%);
+  filter: blur(-9px);
+}
+
+.floating-text .text:nth-child(18) .text_inner1 {
+  animation: vertical 1068ms 86ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(18) .text_inner2 {
+  animation: horizontal 1362ms 55ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(19) {
+  color: #4228cc;
+  clip-path: polygon(89% -1%, 96% -5%, 98% 52%, 88% 64%);
+  filter: blur(-9px);
+}
+
+.floating-text .text:nth-child(19) .text_inner1 {
+  animation: vertical 761ms 75ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(19) .text_inner2 {
+  animation: horizontal 1002ms 59ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(20) {
+  color: #9228f5;
+  clip-path: polygon(93% -2%, 103% -20%, 101% 53%, 94% 75%);
+  filter: blur(0px);
+}
+
+.floating-text .text:nth-child(20) .text_inner1 {
+  animation: vertical 1327ms 55ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(20) .text_inner2 {
+  animation: horizontal 819ms 87ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(21) {
+  color: #be2885;
+  clip-path: polygon(-2% 49%, 8% 42%, 8% 105%, -1% 119%);
+  filter: blur(-1px);
+}
+
+.floating-text .text:nth-child(21) .text_inner1 {
+  animation: vertical 1175ms 90ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(21) .text_inner2 {
+  animation: horizontal 893ms 29ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(22) {
+  color: #a52847;
+  clip-path: polygon(4% 48%, 12% 41%, 13% 101%, 3% 129%);
+  filter: blur(1px);
+}
+
+.floating-text .text:nth-child(22) .text_inner1 {
+  animation: vertical 1561ms 79ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(22) .text_inner2 {
+  animation: horizontal 1009ms 100ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(23) {
+  color: #732855;
+  clip-path: polygon(8% 46%, 19% 39%, 17% 101%, 8% 114%);
+  filter: blur(10px);
+}
+
+.floating-text .text:nth-child(23) .text_inner1 {
+  animation: vertical 1187ms 63ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(23) .text_inner2 {
+  animation: horizontal 802ms 34ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(24) {
+  color: #c128dc;
+  clip-path: polygon(13% 49%, 25% 25%, 21% 104%, 13% 115%);
+  filter: blur(-2px);
+}
+
+.floating-text .text:nth-child(24) .text_inner1 {
+  animation: vertical 1025ms 83ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(24) .text_inner2 {
+  animation: horizontal 894ms 4ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(25) {
+  color: #7b2892;
+  clip-path: polygon(18% 46%, 26% 32%, 29% 104%, 19% 110%);
+  filter: blur(-7px);
+}
+
+.floating-text .text:nth-child(25) .text_inner1 {
+  animation: vertical 837ms 95ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(25) .text_inner2 {
+  animation: horizontal 801ms 11ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(26) {
+  color: #3a28a5;
+  clip-path: polygon(23% 46%, 32% 35%, 33% 103%, 23% 110%);
+  filter: blur(-9px);
+}
+
+.floating-text .text:nth-child(26) .text_inner1 {
+  animation: vertical 769ms 61ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(26) .text_inner2 {
+  animation: horizontal 1544ms 7ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(27) {
+  color: #45286d;
+  clip-path: polygon(28% 45%, 36% 44%, 36% 101%, 29% 115%);
+  filter: blur(-5px);
+}
+
+.floating-text .text:nth-child(27) .text_inner1 {
+  animation: vertical 740ms 23ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(27) .text_inner2 {
+  animation: horizontal 1238ms 87ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(28) {
+  color: #ac2889;
+  clip-path: polygon(33% 47%, 44% 46%, 45% 102%, 33% 126%);
+  filter: blur(-2px);
+}
+
+.floating-text .text:nth-child(28) .text_inner1 {
+  animation: vertical 1462ms 89ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(28) .text_inner2 {
+  animation: horizontal 907ms 18ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(29) {
+  color: #5728fe;
+  clip-path: polygon(38% 46%, 48% 48%, 50% 104%, 38% 124%);
+  filter: blur(-8px);
+}
+
+.floating-text .text:nth-child(29) .text_inner1 {
+  animation: vertical 1511ms 6ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(29) .text_inner2 {
+  animation: horizontal 1249ms 34ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(30) {
+  color: #79288e;
+  clip-path: polygon(43% 47%, 52% 38%, 52% 105%, 43% 122%);
+  filter: blur(9px);
+}
+
+.floating-text .text:nth-child(30) .text_inner1 {
+  animation: vertical 1254ms 14ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(30) .text_inner2 {
+  animation: horizontal 952ms 45ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(31) {
+  color: #4a285f;
+  clip-path: polygon(48% 47%, 60% 48%, 60% 103%, 49% 123%);
+  filter: blur(7px);
+}
+
+.floating-text .text:nth-child(31) .text_inner1 {
+  animation: vertical 1175ms 63ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(31) .text_inner2 {
+  animation: horizontal 1236ms 99ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(32) {
+  color: #bf28c9;
+  clip-path: polygon(53% 47%, 64% 23%, 62% 104%, 54% 112%);
+  filter: blur(-2px);
+}
+
+.floating-text .text:nth-child(32) .text_inner1 {
+  animation: vertical 869ms 86ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(32) .text_inner2 {
+  animation: horizontal 1182ms 30ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(33) {
+  color: #c42849;
+  clip-path: polygon(59% 48%, 67% 49%, 66% 102%, 58% 124%);
+  filter: blur(1px);
+}
+
+.floating-text .text:nth-child(33) .text_inner1 {
+  animation: vertical 1280ms 29ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(33) .text_inner2 {
+  animation: horizontal 1005ms 91ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(34) {
+  color: #8c28e0;
+  clip-path: polygon(64% 49%, 74% 45%, 71% 104%, 63% 126%);
+  filter: blur(-4px);
+}
+
+.floating-text .text:nth-child(34) .text_inner1 {
+  animation: vertical 1177ms 46ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(34) .text_inner2 {
+  animation: horizontal 1496ms 87ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(35) {
+  color: #612849;
+  clip-path: polygon(68% 47%, 79% 32%, 79% 101%, 69% 102%);
+  filter: blur(-6px);
+}
+
+.floating-text .text:nth-child(35) .text_inner1 {
+  animation: vertical 1486ms 14ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(35) .text_inner2 {
+  animation: horizontal 1043ms 56ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(36) {
+  color: #8a2871;
+  clip-path: polygon(73% 46%, 81% 41%, 82% 103%, 73% 110%);
+  filter: blur(10px);
+}
+
+.floating-text .text:nth-child(36) .text_inner1 {
+  animation: vertical 1520ms 86ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(36) .text_inner2 {
+  animation: horizontal 765ms 65ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(37) {
+  color: #3c2899;
+  clip-path: polygon(78% 49%, 89% 21%, 86% 102%, 78% 109%);
+  filter: blur(3px);
+}
+
+.floating-text .text:nth-child(37) .text_inner1 {
+  animation: vertical 1433ms 46ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(37) .text_inner2 {
+  animation: horizontal 787ms 84ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(38) {
+  color: #b8289d;
+  clip-path: polygon(84% 48%, 95% 24%, 94% 102%, 83% 129%);
+  filter: blur(-4px);
+}
+
+.floating-text .text:nth-child(38) .text_inner1 {
+  animation: vertical 735ms 19ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(38) .text_inner2 {
+  animation: horizontal 1054ms 98ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(39) {
+  color: #3828b8;
+  clip-path: polygon(89% 49%, 96% 38%, 97% 105%, 89% 106%);
+  filter: blur(6px);
+}
+
+.floating-text .text:nth-child(39) .text_inner1 {
+  animation: vertical 1592ms 12ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(39) .text_inner2 {
+  animation: horizontal 1469ms 68ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(40) {
+  color: #c128fa;
+  clip-path: polygon(93% 47%, 103% 42%, 101% 103%, 93% 123%);
+  filter: blur(-6px);
+}
+
+.floating-text .text:nth-child(40) .text_inner1 {
+  animation: vertical 782ms 30ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(40) .text_inner2 {
+  animation: horizontal 777ms 32ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(41) {
+  color: #9a2857;
+  clip-path: polygon(-1% 99%, 10% 94%, 10% 154%, -2% 166%);
+  filter: blur(6px);
+}
+
+.floating-text .text:nth-child(41) .text_inner1 {
+  animation: vertical 1433ms 52ms ease-in-out infinite alternate;
+}
+
+.floating-text .text:nth-child(41) .text_inner2 {
+  animation: horizontal 1695ms 33ms ease-in-out infinite alternate;
+}
+
+@keyframes horizontal {
+  0% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(-6px);
+  }
+}
+
+@keyframes vertical {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+.floating-text.full-screen {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111111;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.floating-text.full-screen.fade {
+  opacity: 0;
+}
+
+.floating-text.full-screen.hidden {
+  display: none;
+  z-index: 0;
+}
+
+.floating-text.full-screen {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111111;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.floating-text.full-screen.fade {
+  opacity: 0;
+}
+
+.floating-text.full-screen.hidden {
+  display: none;
+  z-index: 0;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list table {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list table tr:hover {
+  cursor: pointer;
+}
+
+.list table tr:hover h5, .list table tr:hover small, .list table tr:hover td:first-child span {
+  background-color: rgba(86, 40, 243, 0.5);
+  color: #eee;
+  box-shadow: 0 0 0 5px rgba(86, 40, 243, 0.5);
+}
+
+.list table tr:hover td:first-child span {
+  right: 0;
+}
+
+.list table tr td {
+  padding: 0;
+  border-bottom: 1.5rem solid transparent;
+}
+
+.list table tr td:first-child {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: right;
+  color: #ef288f;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.list table tr td:first-child span {
+  transition: .1s right ease-in-out;
+  position: relative;
+  right: -12px;
+}
+
+.list table tr td:last-child h5 {
+  display: inline;
+  line-height: 2rem;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 600px;
+}
+
+.list table tr td:last-child small {
+  font-weight: 100;
+  line-height: 2rem;
+  color: #bbb;
+  position: relative;
+  top: -4px;
+}
+
+.single {
+  display: flex;
+}
+
+.single .video {
+  width: 100%;
+}
+
+.single .detail {
+  flex-basis: 300px;
+  display: block;
+  height: 100vh;
+  width: 300px;
+  flex: 1;
+}
+
+* {
+  font-family: 'Arimo', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #111111;
+  color: #eee;
+}

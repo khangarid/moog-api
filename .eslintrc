@@ -17,11 +17,9 @@
       "experimentalObjectRestSpread": true
     }
   },
-  "plugins": [
-    "react"
-  ],
   "rules": {
     "max-len": ["error", 120],
-    "no-console":0
+    "no-console": 0,
+    "no-unused-vars": 1
   }
 }
