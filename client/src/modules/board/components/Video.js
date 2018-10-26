@@ -53,7 +53,7 @@ class Video extends React.Component {
 
   render() {
     const { data } = this.props;
-    const { width, height, floatingTextClasses } = this.state;
+    const { height, floatingTextClasses } = this.state;
 
     const opts = {
       height,

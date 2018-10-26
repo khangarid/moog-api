@@ -4,10 +4,6 @@ import List from './List';
 import { FloatingText } from 'modules/ui';
 
 class Board extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { list } = this.props;
 

@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 
 class List extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderItem(item, i) {
     const { history } = this.props;
 

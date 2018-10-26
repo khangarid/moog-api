@@ -1,6 +1,7 @@
 {
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   "env": {
     "browser": true,
@@ -19,6 +20,7 @@
   "rules": {
     "max-len": ["error", 120],
     "no-console": 0,
-    "no-unused-vars": 1
+    "no-unused-vars": 1,
+    "react/prop-types": 0
   }
 }
