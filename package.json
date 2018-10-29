@@ -12,7 +12,9 @@
     "start": "node app.js",
     "server": "nodemon app.js",
     "client": "yarn --cwd client start",
-    "dev": "concurrently \"yarn server\" \"yarn client\""
+    "dev": "concurrently \"yarn server\" \"yarn client\" \"yarn webhook\"",
+    "webhook": "lt -p 5000 -s boardwebhookkhangai",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -24,5 +26,8 @@
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "path-parser": "^4.2.0"
+  },
+  "devDependencies": {
+    "localtunnel": "^1.9.1"
   }
 }

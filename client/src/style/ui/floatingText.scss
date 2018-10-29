@@ -6,7 +6,7 @@ $fontSize: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #000;
 
   .inner {
     transform: rotateZ(-4deg);
@@ -15,7 +15,7 @@ $fontSize: 8rem;
   .text {
     position: absolute;
     font-size: $fontSize;
-    color: #fff;
+    color: #000;
     line-height: $fontSize;
     font-family: 'Anton', sans-serif;
     transform: translate(-50%, -50%);
@@ -27,7 +27,7 @@ $fontSize: 8rem;
       $key: $i + 1;
       &:nth-child(#{$key}) {
         $row: floor($i / 20);
-        color: rgba(random(200) + 55, 40, random(200) + 55, 1);
+        color: rgba(random(20), 0, random(50), 1);
         clip-path: polygon(
           $i * 5% - $row * 100% - random(2) $row * 50% - random(5),
           $key * 5% - $row * 100% + random(5) $row * 50% - random(30),

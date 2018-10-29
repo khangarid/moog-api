@@ -1,8 +1,14 @@
 const mongoose = require('mongoose');
+const VoteSchema = require('./Vote');
+
 const { Schema } = mongoose;
 
-const userSchema = new Schema({
-  googleId: String
+const UserSchema = new Schema({
+  googleId: String,
+  isModerator: Boolean,
+  votes: [VoteSchema]
 });
 
-mongoose.model('users', userSchema);
+mongoose.model('users', UserSchema);
+
+module.exports = UserSchema;

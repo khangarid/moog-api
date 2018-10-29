@@ -13,9 +13,9 @@
         cursor: pointer;
 
         h5, small, td:first-child span {
-          background-color: rgba(86, 40, 243, 0.5);
+          background-color: rgba(0, 0, 0, 0.8);
           color: #eee;
-          box-shadow: 0 0 0 5px rgba(86, 40, 243, 0.5);
+          box-shadow: 0 0 0 5px rgba(0, 0, 0s, 0.8);
         }
 
         td:first-child span {
@@ -45,21 +45,22 @@
         &:last-child {
           h5 {
             display: inline;
-            line-height: 2rem;
-            font-size: 2rem;
+            line-height: 1.6rem;
+            font-size: 1.6rem;
             margin: 0;
             font-weight: 100;
-            letter-spacing: 0.5rem;
+            letter-spacing: 0.1rem;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
             width: 600px;
+            text-transform: uppercase;
           }
 
           small {
             font-weight: 100;
             line-height: 2rem;
-            color: #bbb;
+            color: #999;
             position: relative;
             top: -4px;
           }
