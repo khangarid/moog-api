@@ -1,2 +1,3 @@
+# Personal Project
 
-# Side project
+Utlizes Node/Express and React/Redux.
