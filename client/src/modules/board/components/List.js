@@ -7,18 +7,20 @@ class List extends React.Component {
     const { history } = this.props;
 
     return (
-      <tr key={i} onClick={() => history.push(`single/${i}`)}>
-        <td>
-          <span>{i}</span>
-        </td>
-        <td>
-          <div>
-            <h5>{item.name}</h5>
-          </div>
+      <div key={i} onClick={() => history.push(`single/${item.i}`)} className="list-item">
+        <div className="image">
+          <img src={this.buildImgSrc(item.ytVideoId)}></img>
+        </div>
+        <div className='info'>
+          <h5>{item.name}</h5>
           <small>{item.artist}</small>
-        </td>
-      </tr>
+        </div>
+      </div>
     );
+  }
+
+  buildImgSrc(ytVideoId) {
+    return `https://img.youtube.com/vi/${ytVideoId}/0.jpg`
   }
 
   render() {
@@ -26,11 +28,7 @@ class List extends React.Component {
 
     return (
       <div className="list">
-        <table>
-          <tbody>
-            {data.map((item, i) => this.renderItem(item, i))}
-          </tbody>
-        </table>
+        {data.map((item, i) => this.renderItem(item, i))}
       </div>
     );
   }

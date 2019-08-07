@@ -1,74 +1,15 @@
 .list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
 
-  table {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.list-item {
+  .image {
+    width: 15rem;
 
-    tr {
-      &:hover {
-        cursor: pointer;
-
-        h5, small, td:first-child span {
-          background-color: rgba(0, 0, 0, 0.8);
-          color: #eee;
-          box-shadow: 0 0 0 5px rgba(0, 0, 0s, 0.8);
-        }
-
-        td:first-child span {
-          right: 0;
-        }
-      }
-
-      td {
-        padding: 0;
-        border-bottom: 1.5rem solid transparent;
-
-        &:first-child {
-          font-size: 4rem;
-          line-height: 4rem;
-          text-align: right;
-          color: $color-main;
-          font-weight: 600;
-          overflow: hidden;
-
-          span {
-            transition: .1s right ease-in-out;
-            position: relative;
-            right: -12px;
-          }
-        }
-
-        &:last-child {
-          h5 {
-            display: inline;
-            line-height: 1.6rem;
-            font-size: 1.6rem;
-            margin: 0;
-            font-weight: 100;
-            letter-spacing: 0.1rem;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            width: 600px;
-            text-transform: uppercase;
-          }
-
-          small {
-            font-weight: 100;
-            line-height: 2rem;
-            color: #999;
-            position: relative;
-            top: -4px;
-          }
-        }
-      }
+    img {
+      width: 100%;
     }
   }
-
 }
 
 .single {

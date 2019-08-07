@@ -46,4 +46,13 @@ module.exports = app => {
   app.post('/api/tags/search', async (req, res) => {
     res.send(await postController.findTags(req.body.name))
   });
+
+  app.get('/api/test', async (req, res) => {
+    const axios = require('axios');
+
+    const target = await axios.get('http://localhost:3000/');
+
+    console.log(target.data);
+    res.send(target.data);
+  })
 };
