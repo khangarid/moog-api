@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const bodyParser = require('body-parser');
-const environment = require('../config/environment')
+const environment = require('./share/config/environment')
 
 require('./models/User');
 require('./models/Tag');
