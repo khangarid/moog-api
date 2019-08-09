@@ -12,9 +12,8 @@
     "start": "node app.js",
     "server": "nodemon app.js",
     "client": "yarn --cwd client start",
-    "dev": "concurrently \"yarn server\" \"yarn client\" \"yarn webhook\"",
-    "webhook": "lt -p 5000 -s boardwebhookkhangai",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "concurrently \"yarn server\" \"yarn webhook\"",
+    "webhook": "lt -p 5000 -s boardwebhookkhangai"
   },
   "dependencies": {
     "axios": "^0.18.0",
