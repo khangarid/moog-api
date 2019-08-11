@@ -1,35 +1,43 @@
 {
   "name": "board",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
   "license": "ISC",
-  "author": "KD",
+  "author": "Khangarid Davaadorj",
   "engines": {
     "node": "10.4.1",
     "npm": "6.1.0"
   },
   "scripts": {
-    "start": "node app.js",
-    "server": "nodemon app.js",
-    "client": "yarn --cwd client start",
-    "dev": "concurrently \"yarn server\" \"yarn webhook\"",
-    "webhook": "lt -p 5000 -s boardwebhookkhangai"
+    "start": "nodemon dist/app.js",
+    "watch-ts": "tsc -w",
+    "webhook": "lt -p 5000 -s boardwebhookkhangai",
+    "dev": "concurrently \"yarn watch-ts\" \"yarn start\"",
+    "build-ts": "tsc",
+    "build": "npm run build-ts && npm run lint",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "serve": "node dist/app.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "body-parser": "^1.18.3",
     "cookie-session": "^2.0.0-beta.3",
     "dotenv": "^8.0.0",
-    "express": "^4.16.3",
-    "mongoose": "^5.2.7",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0",
+    "passport-google-oauth20": "^2.0.0",
     "path-parser": "^4.2.0"
   },
   "devDependencies": {
-    "concurrently": "^4.0.1",
+    "@types/cookie-session": "^2.0.37",
+    "@types/dotenv": "^6.1.1",
+    "@types/mongoose": "^5.5.12",
+    "@types/node": "^12.7.1",
+    "@types/passport": "^1.0.0",
+    "@types/passport-google-oauth20": "^2.0.2",
+    "concurrently": "^4.1.1",
     "localtunnel": "^1.9.1",
-    "nodemon": "^1.18.3",
+    "nodemon": "^1.19.1",
     "typescript": "^3.5.3"
   }
 }

@@ -1,19 +1,20 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
-const express = require('express');
-const mongoose = require('mongoose');
-const cookieSession = require('cookie-session');
-const passport = require('passport');
-const bodyParser = require('body-parser');
-const environment = require('./share/config/environment')
+import express from 'express';
+import mongoose from 'mongoose';
+import cookieSession from 'cookie-session';
+import passport from 'passport';
+import bodyParser from 'body-parser';
+import path from 'path';
 
-require('./models/User');
-require('./models/Tag');
-require('./models/Post');
+import { environment } from './shared/config';
+import { authRoutes } from './auth/routes';
 
-require('./services/passport');
+import './auth/models';
+import './auth/services';
 
-mongoose.connect(environment.mongoURI);
+mongoose.connect(environment.mongoURI, { useNewUrlParser: true });
 
 const app = express();
 
@@ -27,12 +28,11 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-require('./routes/authRoutes')(app);
+authRoutes(app);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 
-  const path = require('path');
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });

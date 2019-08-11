@@ -1,14 +1,10 @@
-const mongoose = require('mongoose');
-const VoteSchema = require('./Vote');
-
-const { Schema } = mongoose;
+import { Schema, model } from 'mongoose';
 
 const UserSchema = new Schema({
   googleId: String,
-  isModerator: Boolean,
-  votes: [VoteSchema]
+  isModerator: Boolean
 });
 
-mongoose.model('users', UserSchema);
+model('users', UserSchema);
 
-module.exports = UserSchema;
+export { UserSchema };

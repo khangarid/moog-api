@@ -1,8 +1,3 @@
-const mongoose = require('mongoose');
-const User = mongoose.model('users');
-
-class UserController {
+export class UserController {
     
 }
-
-module.exports = new UserController();
