@@ -1,11 +1,9 @@
 import passport from 'passport';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
-import { model } from 'mongoose';
 
 import { environment } from '../../core/config';
+import { User } from '../models';
 
-
-const User = model("users");
 
 passport.serializeUser((user: any, done) => {
   done(null, user.id);
