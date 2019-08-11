@@ -1,1 +1,3 @@
-export * from './loaders';
+export const loadChart = (app) => {
+  
+}
