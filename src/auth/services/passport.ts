@@ -1,21 +1,21 @@
-import { serializeUser, deserializeUser, use } from 'passport';
+import passport from 'passport';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
 import { model } from 'mongoose';
 
-import { environment } from '../../shared/config';
+import { environment } from '../../core/config';
 
 
 const User = model("users");
 
-serializeUser((user: any, done) => {
+passport.serializeUser((user: any, done) => {
   done(null, user.id);
 });
 
-deserializeUser((id, done) => {
+passport.deserializeUser((id, done) => {
   User.findById(id).then(user => done(null, user));
 });
 
-use(
+passport.use(
   new GoogleStrategy(
     {
       clientID: environment.googleClientID,
