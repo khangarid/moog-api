@@ -1,13 +1,15 @@
 import express from 'express';
 
 import { loadCore } from './core';
-import { loadAuth } from './auth';
+import { loadUser } from './user';
+import { loadSong } from './song';
 import { loadChart } from './chart';
 
 const app = express();
 
 loadCore(app);
-loadAuth(app);
+loadUser(app);
+loadSong(app);
 loadChart(app);
 
 export { app };
