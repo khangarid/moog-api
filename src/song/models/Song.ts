@@ -1,22 +1,22 @@
 import { Document, Schema, model } from 'mongoose';
 
-export type SongDocument = Document & {
+export interface ISong {
   name: string;
   artist: string;
   source: {
     name: string;
-    key: string;
-    url: string;
+    id: string;
   }
 }
+
+export type SongDocument = ISong & Document;
 
 const songSchema = new Schema({
   name: String,
   artist: String,
   source: {
     name: String,
-    key: String,
-    url: String
+    id: String,
   }
 }, { timestamps:  true });
 

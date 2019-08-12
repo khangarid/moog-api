@@ -1,3 +1,6 @@
+// Dependency for typedi
+import "reflect-metadata";
+
 import express from 'express';
 
 import { loadCore } from './core';
