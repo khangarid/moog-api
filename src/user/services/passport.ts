@@ -1,7 +1,7 @@
 import passport from 'passport';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
 
-import { environment } from '../../core/config';
+import { config } from '../../core/config';
 import { User } from '../models';
 
 
@@ -16,8 +16,8 @@ passport.deserializeUser((id, done) => {
 passport.use(
   new GoogleStrategy(
     {
-      clientID: environment.googleClientID,
-      clientSecret: environment.googleClientSecret,
+      clientID: config.passport.googleClientID,
+      clientSecret: config.passport.googleClientSecret,
       callbackURL: "/auth/google/callback"
     },
     async (accessToken, refreshToken, profile, done) => {

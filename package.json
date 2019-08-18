@@ -28,7 +28,8 @@
     "passport-google-oauth20": "^2.0.0",
     "path-parser": "^4.2.0",
     "reflect-metadata": "^0.1.13",
-    "typedi": "^0.8.0"
+    "typedi": "^0.8.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "@types/cookie-session": "^2.0.37",

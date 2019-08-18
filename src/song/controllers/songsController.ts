@@ -3,6 +3,12 @@ import Container from "typedi";
 import { SongsService } from "../services/songsService";
 import { ISong } from "../models";
 
+
+/**
+ * GET songs
+ * @param req 
+ * @param res 
+ */
 const getSongs = async (req: Request, res: Response) => {
   const songsService = Container.get(SongsService);
   const songs = await songsService.getAll();
@@ -10,6 +16,11 @@ const getSongs = async (req: Request, res: Response) => {
   res.send({ songs });
 };
 
+/**
+ * GET songs/:id
+ * @param req 
+ * @param res 
+ */
 const getSong = async (req: Request, res: Response) => {
   const { id } = req.params;
   const songsService = Container.get(SongsService);
@@ -19,6 +30,11 @@ const getSong = async (req: Request, res: Response) => {
   res.send({ song });
 };
 
+/**
+ * POST songs
+ * @param req 
+ * @param res 
+ */
 const postSong = async (req: Request, res: Response) => {
   const { } = req.body;
   const songsService = Container.get(SongsService);

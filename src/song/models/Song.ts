@@ -1,4 +1,5 @@
-import { Document, Schema, model } from 'mongoose';
+import { Document, Schema, model, Model } from 'mongoose';
+
 
 export interface ISong {
   name: string;
@@ -10,6 +11,8 @@ export interface ISong {
 }
 
 export type SongDocument = ISong & Document;
+
+export type SongModel = Model<SongDocument>
 
 const songSchema = new Schema({
   name: String,
