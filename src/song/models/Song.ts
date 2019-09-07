@@ -1,18 +1,6 @@
-import { Document, Schema, model, Model } from 'mongoose';
+import { Schema, model } from 'mongoose';
+import { SongTypes } from '../types';
 
-
-export interface ISong {
-  name: string;
-  artist: string;
-  source: {
-    name: string;
-    id: string;
-  }
-}
-
-export type SongDocument = ISong & Document;
-
-export type SongModel = Model<SongDocument>
 
 const songSchema = new Schema({
   name: String,
@@ -23,4 +11,4 @@ const songSchema = new Schema({
   }
 }, { timestamps:  true });
 
-export const Song = model<SongDocument>('Song', songSchema)
+export const Song = model<SongTypes.SongDocument>('Song', songSchema)

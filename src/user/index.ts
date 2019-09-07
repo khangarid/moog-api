@@ -5,6 +5,9 @@ import './services';
 import { usersController } from './controllers';
 
 export const loadUser = (app) => {
+  /**
+   * Middlewares
+   */
   app.use(passport.initialize());
   app.use(passport.session());
 

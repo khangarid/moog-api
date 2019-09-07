@@ -1,23 +1,23 @@
 import { Service, Inject } from 'typedi';
-
-import { ISong, SongDocument, SongModel } from '../models';
 import { Logger } from 'winston';
+import { SongTypes } from '../types';
+import { ISong } from '../interfaces/ISong';
 
 
 @Service()
 export class SongsService {
   constructor(
-    @Inject('songModel') private songModel: SongModel,
+    @Inject('songModel') private songModel: SongTypes.SongModel,
     @Inject('logger') private logger: Logger
   ) { }
 
-  async create(song: ISong): Promise<SongDocument> {
+  async create(song: ISong): Promise<SongTypes.SongDocument> {
     const newSong = await this.songModel.create(song);
     this.logger.debug('Create new song', song);
     return newSong;
   }
 
-  async getAll(): Promise<SongDocument[]> {
+  async getAll(): Promise<SongTypes.SongDocument[]> {
     const songs = await this.songModel.find({});
     return songs;
   }
