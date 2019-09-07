@@ -29,5 +29,13 @@ export const config = {
    */
   logs: {
     level: process.env.LOG_LEVEL || 'silly',
+  },
+
+  /**
+   * Feed
+   */
+  dataFeeds: {
+    youtubeApikey: process.env.YOUTUBE_API_KEY,
+    youtubeAccessToken: process.env.GOOGLE_CLIENT_ID
   }
 }
