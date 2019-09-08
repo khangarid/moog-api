@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import Container from "typedi";
-import { SongsService } from "../services/songsService";
-import { ISong } from "../interfaces/ISong";
+import { SongsService } from "../services";
+import { ISong } from "../interfaces";
 
 
 /**

@@ -4,6 +4,7 @@ import { Logger } from 'winston';
 
 import { songsController } from "./controllers/songsController";
 import * as models from './models';
+import { subscribeToFeed } from "./subscribers";
 
 export const loadSong = (app: Application) => {
   const logger = Container.get<Logger>('logger');
@@ -12,6 +13,8 @@ export const loadSong = (app: Application) => {
    * Inject things into DI container
    */
   Container.set('songModel', models.Song);
+
+  subscribeToFeed();
 
   /**
    * Routes

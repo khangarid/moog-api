@@ -12,9 +12,9 @@ import { loadFeed } from './feed';
 const app = express();
 
 loadCore(app);
+loadFeed(app);
 loadUser(app);
 loadSong(app);
 loadChart(app);
-loadFeed(app);
 
 export { app };
