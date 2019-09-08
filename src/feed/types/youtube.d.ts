@@ -1,5 +1,5 @@
-declare module FeedTypes {
-  export type YoutubeResponseItem = {
+declare module Youtube {
+  export type SearchItem = {
     kind: string,
     etag: string,
     id: {
@@ -33,7 +33,7 @@ declare module FeedTypes {
     }
   }
     
-  export type YoutubeResponse = {
+  export type SearchResponse = {
     kind: string,
     etag: string,
     regionCode: string,
@@ -42,6 +42,30 @@ declare module FeedTypes {
       totalResults: number,
       resultsPerPage: number
     },
-    items: YoutubeResponseItem[]
+    items: SearchItem[]
   }
+
+  export type VideosItem = {
+    kind: string,
+    etag: string,
+    id: string,
+    statistics: {
+     viewCount: number,
+     likeCount: number,
+     dislikeCount: number,
+     favoriteCount: number,
+     commentCount: number
+    }
+   }
+
+  export type VideosResponse = {
+    kind: string,
+    etag: string,
+    pageInfo: {
+     totalResults: number,
+     resultsPerPage: number,
+    },
+    items: VideosItem[]
+   }
+   
 }

@@ -1,12 +1,13 @@
 import { Application } from "express";
+import { startFeed } from "./jobs/feedJob";
+import { FeedEvent } from "./events";
 import Container from "typedi";
-import { FeedService } from "./services/feedService";
+
 
 export const loadFeed = async (app: Application) => {
+  const feedEvent = new FeedEvent();
 
-  const feedService = Container.get(FeedService);
+  Container.set('feedEvent', feedEvent);
 
-  const response = await feedService.fetch();
-
-  console.log(response.data);
+  startFeed(feedEvent);
 }
