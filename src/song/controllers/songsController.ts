@@ -39,17 +39,7 @@ const postSong = async (req: Request, res: Response) => {
   const { } = req.body;
   const songsService = Container.get(SongsService);
 
-  const song: ISong = {
-    name: 'Bad guy',
-    artist: 'Billie Ellish',
-    source: {
-      name: 'youtube',
-      id: 'jpEUusGcdIw'
-    }
-  }
-  
-  const newSong = await songsService.create(song);
-  res.send({ song: newSong });
+  // res.send({ song: newSong });
 };
 
 export const songsController = {

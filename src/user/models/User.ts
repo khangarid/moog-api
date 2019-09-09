@@ -10,4 +10,4 @@ const userSchema = new Schema({
   isModerator: Boolean
 });
 
-export const User = model<UserDocument>('User', userSchema);
+export const UserModel = model<UserDocument>('User', userSchema);

@@ -12,7 +12,7 @@ export const loadSong = (app: Application) => {
   /**
    * Inject things into DI container
    */
-  Container.set('songModel', models.Song);
+  Container.set('songModel', models.SongModel);
 
   subscribeToFeed();
 
