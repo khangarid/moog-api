@@ -1,71 +1,71 @@
-declare module Youtube {
+declare namespace Youtube {
   export type SearchItem = {
-    kind: string,
-    etag: string,
+    kind: string;
+    etag: string;
     id: {
-      kind: string,
-      videoId: string
-    },
+      kind: string;
+      videoId: string;
+    };
     snippet: {
-      publishedAt: string,
-      channelId: string,
-      title: string,
-      description: string
+      publishedAt: string;
+      channelId: string;
+      title: string;
+      description: string;
       thumbnails: {
         default: {
-          url: string
-          width: number,
-          height: number
-        },
+          url: string;
+          width: number;
+          height: number;
+        };
         medium: {
-          url: string
-          width: number,
-          height: number
-        },
+          url: string;
+          width: number;
+          height: number;
+        };
         high: {
-          url: string,
-          width: number,
-          height: number
-        }
-      },
-      channelTitle: string,
-      liveBroadcastContent: string
-    }
+          url: string;
+          width: number;
+          height: number;
+        };
+      };
+      channelTitle: string;
+      liveBroadcastContent: string;
+    };
   }
     
   export type SearchResponse = {
-    kind: string,
-    etag: string,
-    regionCode: string,
-    nextPageToken: string,
+    kind: string;
+    etag: string;
+    regionCode: string;
+    nextPageToken: string;
     pageInfo: {
-      totalResults: number,
-      resultsPerPage: number
-    },
-    items: SearchItem[]
+      totalResults: number;
+      resultsPerPage: number;
+    };
+    items: SearchItem[];
   }
 
   export type VideosItem = {
-    kind: string,
-    etag: string,
-    id: string,
+    kind: string;
+    etag: string;
+    id: string;
     statistics: {
-     viewCount: number,
-     likeCount: number,
-     dislikeCount: number,
-     favoriteCount: number,
-     commentCount: number
-    }
+     viewCount: number;
+     likeCount: number;
+     dislikeCount: number;
+     favoriteCount: number;
+     commentCount: number;
+    };
    }
 
   export type VideosResponse = {
-    kind: string,
-    etag: string,
+    kind: string;
+    etag: string;
     pageInfo: {
-     totalResults: number,
-     resultsPerPage: number,
-    },
-    items: VideosItem[]
+     totalResults: number;
+     resultsPerPage: number;
+    };
+    items: VideosItem[];
    }
    
 }

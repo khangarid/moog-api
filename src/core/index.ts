@@ -1,24 +1,24 @@
 /**
  * Spin up .env. Load this before all else.
  */
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config();
 
-import mongoose from 'mongoose';
-import cookieSession from 'cookie-session';
-import bodyParser from 'body-parser';
-import Container from 'typedi';
+import mongoose from "mongoose";
+import cookieSession from "cookie-session";
+import bodyParser from "body-parser";
+import Container from "typedi";
 
-import { config } from './config';
-import { logger, agenda } from './loaders';
+import { config } from "./config";
+import { logger, agenda } from "./loaders";
 
 
 export const loadCore = (app) => {
   /**
    * Inject things into DI container
    */
-  Container.set('logger', logger);
-  Container.set('agenda', agenda);
+  Container.set("logger", logger);
+  Container.set("agenda", agenda);
 
   /**
    * Connect mongoose
@@ -35,5 +35,5 @@ export const loadCore = (app) => {
       keys: [config.cookieKey]
     })
   );
-}
+};
 

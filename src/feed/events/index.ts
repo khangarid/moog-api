@@ -1,1 +1,1 @@
-export * from './feedEvent';
+export * from "./feedEvent";

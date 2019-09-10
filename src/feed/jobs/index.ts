@@ -1,1 +1,1 @@
-export * from './feedJob';
+export * from "./feedJob";

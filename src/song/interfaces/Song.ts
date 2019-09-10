@@ -4,5 +4,5 @@ export interface Song {
   youtube: {
     videoId: string;
     publishedAt: string;
-  }
+  };
 }

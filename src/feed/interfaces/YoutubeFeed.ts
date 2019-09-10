@@ -6,7 +6,7 @@ export interface YoutubeFeedItem {
   thumbnail: {
     url: string;
     width: number;
-    height: number
+    height: number;
   };
   statistics: {
     viewCount: number;
@@ -14,10 +14,10 @@ export interface YoutubeFeedItem {
     dislikeCount: number;
     favoriteCount: number;
     commentCount: number;
-  }
+  };
 }
 
 export interface YoutubeFeed {
   runAt: string;
-  items: YoutubeFeedItem[]
+  items: YoutubeFeedItem[];
 }

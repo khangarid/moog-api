@@ -28,7 +28,7 @@ export const config = {
    * Winston stuff
    */
   logs: {
-    level: process.env.LOG_LEVEL || 'silly',
+    level: process.env.LOG_LEVEL || "silly",
   },
 
   /**
@@ -38,4 +38,4 @@ export const config = {
     youtubeApikey: process.env.YOUTUBE_API_KEY,
     youtubeAccessToken: process.env.GOOGLE_CLIENT_ID
   }
-}
+};

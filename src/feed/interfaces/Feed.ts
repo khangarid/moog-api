@@ -1,5 +1,5 @@
 import { YoutubeFeed } from "./YoutubeFeed";
 
 export interface Feed {
-  youtube: YoutubeFeed
+  youtube: YoutubeFeed;
 }

@@ -1,4 +1,4 @@
-import TheAgenda from 'agenda';
+import TheAgenda from "agenda";
 
 declare global {
   export type Agenda = TheAgenda

@@ -6,5 +6,5 @@ export interface Stat {
     dislikeCount: number;
     favoriteCount: number;
     commentCount: number;
-  }
+  };
 }

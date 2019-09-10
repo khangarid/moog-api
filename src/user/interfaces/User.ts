@@ -1,4 +1,4 @@
 export interface User {
-  googleId: String,
-  isModerator: Boolean
+  googleId: string;
+  isModerator: boolean;
 };

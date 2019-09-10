@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import Container from "typedi";
-import { SongsService } from "../services";
+import { ChartService } from "../services";
 
 
 /**
@@ -8,8 +8,8 @@ import { SongsService } from "../services";
  * @param req 
  * @param res 
  */
-const getSongs = async (req: Request, res: Response) => {
-  const songsService = Container.get(SongsService);
+const getCharts = async (req: Request, res: Response) => {
+  const songsService = Container.get(ChartService);
   const songs = await songsService.getAll();
 
   res.send({ songs });
@@ -20,9 +20,9 @@ const getSongs = async (req: Request, res: Response) => {
  * @param req 
  * @param res 
  */
-const getSong = async (req: Request, res: Response) => {
+const getChart = async (req: Request, res: Response) => {
   const { id } = req.params;
-  const songsService = Container.get(SongsService);
+  const songsService = Container.get(ChartService);
 
   const song = await songsService.getById(id);
 
@@ -34,15 +34,15 @@ const getSong = async (req: Request, res: Response) => {
  * @param req 
  * @param res 
  */
-const postSong = async (req: Request, res: Response) => {
+const postChart = async (req: Request, res: Response) => {
   const { } = req.body;
-  const songsService = Container.get(SongsService);
+  const songsService = Container.get(ChartService);
 
   // res.send({ song: newSong });
 };
 
-export const songsController = {
-  getSongs,
-  getSong,
-  postSong
+export const chartController = {
+  getCharts,
+  getChart,
+  postChart
 };

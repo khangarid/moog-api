@@ -1,8 +1,8 @@
-import { Schema, Document, model, Model } from 'mongoose';
-import { IUser } from '../interfaces';
+import { Schema, Document, model, Model } from "mongoose";
+import { User } from "../interfaces";
 
 
-export type UserDocument = Document & IUser
+export type UserDocument = Document & User
 export type UserModel = Model<UserDocument>;
 
 const userSchema = new Schema({
@@ -10,4 +10,4 @@ const userSchema = new Schema({
   isModerator: Boolean
 });
 
-export const UserModel = model<UserDocument>('User', userSchema);
+export const UserModel = model<UserDocument>("User", userSchema);

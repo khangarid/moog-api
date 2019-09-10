@@ -1,15 +1,15 @@
-import { Inject, Service } from 'typedi';
-import { Logger } from 'winston';
-import axios, { AxiosResponse } from 'axios';
+import { Inject, Service } from "typedi";
+import { Logger } from "winston";
+import axios, { AxiosResponse } from "axios";
 
-import { config } from '../../core/config';
-import { FeedService, YoutubeFeed } from '../interfaces';
+import { config } from "../../core/config";
+import { FeedService, YoutubeFeed } from "../interfaces";
 
 
 @Service()
 export class YoutubeService implements FeedService<YoutubeFeed> {
   constructor(
-    @Inject('logger') private logger: Logger
+    @Inject("logger") private logger: Logger
   ) { }
 
   async fetchFeed(publishedAfter: string): Promise<YoutubeFeed | null> {
@@ -30,7 +30,7 @@ export class YoutubeService implements FeedService<YoutubeFeed> {
       description: snippet.description,
       thumbnail: snippet.thumbnails.high,
       statistics: videosItems[i].statistics
-    }))
+    }));
 
     return {
       runAt: new Date().toISOString(),
@@ -40,30 +40,30 @@ export class YoutubeService implements FeedService<YoutubeFeed> {
 
   search(publishedAfter: string): Promise<AxiosResponse<Youtube.SearchResponse>> {
     const params = {
-      part: 'snippet',
-      location: '47.910384, 106.907324',
-      locationRadius: '10mi',
+      part: "snippet",
+      location: "47.910384, 106.907324",
+      locationRadius: "10mi",
       publishedAfter,
-      type: 'video',
+      type: "video",
       videoCategoryId: 10,
       key: config.dataFeeds.youtubeApikey
-    }
+    };
     
     return axios.get<Youtube.SearchResponse>(
-      'https://www.googleapis.com/youtube/v3/search',
+      "https://www.googleapis.com/youtube/v3/search",
       { params }
-    )
+    );
   }
 
   fetchVideos(videoIds: string[]): Promise<AxiosResponse<Youtube.VideosResponse>> {
     const params = {
       part: "statistics",
-      id: videoIds.join(',')
-    }
+      id: videoIds.join(",")
+    };
 
     return axios.get<Youtube.VideosResponse>(
-      'https://www.googleapis.com/youtube/v3/videos', 
+      "https://www.googleapis.com/youtube/v3/videos", 
       { params }
-    )
+    );
   }
 }

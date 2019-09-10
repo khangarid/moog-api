@@ -1,11 +1,11 @@
-import { Schema, model, Model, Document } from 'mongoose';
-import { Song } from '../interfaces';
+import { Schema, model, Model, Document } from "mongoose";
+import { Song } from "../interfaces";
 
 
 export type SongDocument = Song & Document;
 export type SongModel = Model<SongDocument>
 
-const songSchema = new Schema({
+export const songSchema = new Schema({
   title: String,
   thumbnail: String,
   youtube: {
@@ -15,4 +15,4 @@ const songSchema = new Schema({
   }
 }, { timestamps:  true });
 
-export const SongModel = model<SongDocument>('Song', songSchema)
+export const SongModel = model<SongDocument>("Song", songSchema);

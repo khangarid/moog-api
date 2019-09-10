@@ -1,8 +1,8 @@
-import passport from 'passport';
-import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
+import passport from "passport";
+import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 
-import { config } from '../../core/config';
-import { User } from '../models';
+import { config } from "../../core/config";
+import { UserModel } from "../models";
 
 
 passport.serializeUser((user: any, done) => {
@@ -10,7 +10,7 @@ passport.serializeUser((user: any, done) => {
 });
 
 passport.deserializeUser((id, done) => {
-  User.findById(id).then(user => done(null, user));
+  UserModel.findById(id).then(user => done(null, user));
 });
 
 passport.use(
@@ -21,13 +21,13 @@ passport.use(
       callbackURL: "/auth/google/callback"
     },
     async (accessToken, refreshToken, profile, done) => {
-      const existingUser = await User.findOne({ googleId: profile.id });
+      const existingUser = await UserModel.findOne({ googleId: profile.id });
 
       if (existingUser) {
         return done(null, existingUser);
       }
 
-      const newUser = await new User({ googleId: profile.id }).save();
+      const newUser = await new UserModel({ googleId: profile.id }).save();
       done(null, newUser);
     }
   )

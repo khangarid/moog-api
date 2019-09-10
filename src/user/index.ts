@@ -1,8 +1,8 @@
-import passport = require('passport');
+import passport = require("passport");
 
-import './models';
-import './services';
-import { usersController } from './controllers';
+import "./models";
+import "./services";
+import { usersController } from "./controllers";
 
 export const loadUser = (app) => {
   /**
@@ -24,4 +24,4 @@ export const loadUser = (app) => {
   app.get("/auth/google/callback", passport.authenticate("google"), (req, res) => { 
     res.send();
   });
-}
+};
