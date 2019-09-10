@@ -8,22 +8,25 @@ import mongoose from "mongoose";
 import cookieSession from "cookie-session";
 import bodyParser from "body-parser";
 import Container from "typedi";
+import { Application } from "express";
 
 import { config } from "./config";
-import { logger, agenda } from "./loaders";
+import { logger, initAgenda } from "./loaders";
 
 
-export const loadCore = (app) => {
-  /**
-   * Inject things into DI container
-   */
-  Container.set("logger", logger);
-  Container.set("agenda", agenda);
-
+export const loadCore = async (app: Application) => {
   /**
    * Connect mongoose
    */
   mongoose.connect(config.mongoURI, { useNewUrlParser: true });
+
+  const agenda = await initAgenda();
+
+  /**
+   * Inject things into DI container
+   */
+  Container.set("agenda", agenda);
+  Container.set("logger", logger);
 
   /**
    * Middlewares

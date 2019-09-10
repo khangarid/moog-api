@@ -11,10 +11,12 @@ import { loadFeed } from "./feed";
 
 const app = express();
 
-loadCore(app);
-loadFeed(app);
-loadUser(app);
-loadSong(app);
-loadChart(app);
+(async function() {
+  await loadCore(app);
+  loadFeed(app);
+  loadUser(app);
+  loadSong(app);
+  loadChart(app);
+})();
 
 export { app };

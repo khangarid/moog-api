@@ -1,20 +1,23 @@
 import Container from "typedi";
-import { FeedEvent } from "../../feed/events";
+import { Job } from "agenda";
+
 import { SongsService } from "../services";
 import { Song } from "../interfaces";
+import { Feed } from "../../feed";
 
-export function subscribeToFeed() {
-  const feedEvent = Container.get<FeedEvent>("feedEvent");
+
+export function newFeedJob() {
   const songsService = Container.get(SongsService);
+  const agenda = Container.get<Agenda>("agenda");
 
-  feedEvent.onNewFeed(async (feed) => {
-    const items = feed.youtube.items;
+  agenda.define("new feed", async (job: Job<Feed>) => {
+    const items = job.attrs.data.youtube.items;
 
     const songs = await songsService.getByVideoIds(items.map(item => item.videoId)); 
 
     const newSongs: Song[] = items
       .filter(item => 
-        songs.find(song => song.youtube.videoId !== item.videoId)
+        !songs.find(song => song.youtube.videoId === item.videoId)
       )
       .map(item => ({
         title: item.title,

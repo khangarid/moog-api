@@ -1,18 +1,17 @@
 import { Application } from "express";
 
-import { startChart } from "./jobs";
 import Container from "typedi";
 import { SongModel } from "../song/models";
 import { chartController } from "./controllers";
-import { subscribeToFeed } from "./subscribers";
+import { chartJob, newFeedJob } from "./jobs";
 
 
 export const loadChart = (app: Application) => {
 
   Container.set("chartModel", SongModel);
 
-  startChart();  
-  subscribeToFeed();
+  chartJob();  
+  newFeedJob();
   
   /**
    * Routes
