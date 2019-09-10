@@ -58,12 +58,14 @@ export class YoutubeService implements FeedService<YoutubeFeed> {
   fetchVideos(videoIds: string[]): Promise<AxiosResponse<Youtube.VideosResponse>> {
     const params = {
       part: "statistics",
-      id: videoIds.join(",")
+      id: videoIds.join(","),
+      key: config.dataFeeds.youtubeApikey
     };
 
     return axios.get<Youtube.VideosResponse>(
       "https://www.googleapis.com/youtube/v3/videos", 
       { params }
     );
+  
   }
 }
