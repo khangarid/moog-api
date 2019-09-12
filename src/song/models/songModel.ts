@@ -1,10 +1,10 @@
-import { Schema, model, Model, Document } from "mongoose";
+import { Schema, model, Document, Model } from "mongoose";
 
 import { Song } from "../interfaces";
 
 
 export type SongDocument = Song & Document;
-export type SongModel = Model<SongDocument>
+export type SongModel = Model<SongDocument>;
 
 export const songSchema = new Schema({
   title: String,
@@ -16,4 +16,4 @@ export const songSchema = new Schema({
   }
 }, { timestamps:  true });
 
-export const SongModel = model<SongDocument>("Song", songSchema);
+export const songModel = model<SongDocument>("Song", songSchema);

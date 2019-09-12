@@ -12,4 +12,4 @@ const chartSchema = new Schema({
   songs: [songSchema]
 }, { timestamps: true });
 
-export const ChartModel = model<ChartDocument>("Chart", chartSchema);
+export const chartModel = model<ChartDocument>("Chart", chartSchema);

@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
-import Container from "typedi";
-import { SongsService } from "../services";
+import { songsService } from "../services";
 
 
 /**
@@ -8,8 +7,7 @@ import { SongsService } from "../services";
  * @param req 
  * @param res 
  */
-const getSongs = async (req: Request, res: Response) => {
-  const songsService = Container.get(SongsService);
+async function getSongs(req: Request, res: Response) {
   const songs = await songsService.getAll();
 
   res.send({ songs });
@@ -20,9 +18,8 @@ const getSongs = async (req: Request, res: Response) => {
  * @param req 
  * @param res 
  */
-const getSong = async (req: Request, res: Response) => {
+async function getSong(req: Request, res: Response) {
   const { id } = req.params;
-  const songsService = Container.get(SongsService);
 
   const song = await songsService.getById(id);
 
@@ -34,9 +31,8 @@ const getSong = async (req: Request, res: Response) => {
  * @param req 
  * @param res 
  */
-const postSong = async (req: Request, res: Response) => {
+async function postSong(req: Request, res: Response) {
   const { } = req.body;
-  const songsService = Container.get(SongsService);
 
   // res.send({ song: newSong });
 };

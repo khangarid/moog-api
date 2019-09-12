@@ -1,11 +1,12 @@
 import { Application } from "express";
 
-import { feedJob } from "./jobs/feedJob";
 import { Feed } from "./interfaces";
+import "./jobs/feedJob";
+import { FeedEvents } from "./events";
 
+const feedEvents = new FeedEvents();
 
 const loadFeed = (app: Application) => {
-  feedJob();
 };
 
-export { loadFeed, Feed };
+export { loadFeed, Feed, feedEvents };

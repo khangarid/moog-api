@@ -1,6 +1,3 @@
-// Dependency for typedi, should be on top
-import "reflect-metadata";
-
 import express from "express";
 
 import { loadCore } from "./core";

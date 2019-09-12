@@ -1,1 +1,2 @@
-export * from "./Chart";
+export * from "./chartModel";
+export * from './statModel';

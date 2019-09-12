@@ -1,25 +1,17 @@
-import { Service, Inject } from "typedi";
-import { Logger } from "winston";
-import { ChartModel, ChartDocument } from "../models";
+import { ChartDocument, chartModel } from "../models";
 import { Chart } from "../interfaces";
 
 
-@Service()
-export class ChartService {
-  constructor(
-    @Inject("chartModel") private chartModel: ChartModel,
-    @Inject("logger") private logger: Logger
-  ) { }
-
-  async create(songs: Chart[] | Chart): Promise<ChartDocument> {
-    return await this.chartModel.create(songs);
-  }
-
-  async getAll(): Promise<ChartDocument[]> {
-    return await this.chartModel.find({});
-  }
-
-  async getById(id: string): Promise<ChartDocument> {
-    return await this.chartModel.findById(id);
-  }
+async function create(songs: Chart[] | Chart): Promise<ChartDocument> {
+  return await chartModel.create(songs);
 }
+
+async function getAll(): Promise<ChartDocument[]> {
+  return await chartModel.find({});
+}
+
+async function getById(id: string): Promise<ChartDocument> {
+  return await chartModel.findById(id);
+}
+
+export const chartService = { create, getAll, getById };

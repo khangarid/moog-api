@@ -1,7 +1,5 @@
 import passport = require("passport");
 
-import "./models";
-import "./services";
 import { usersController } from "./controllers";
 
 export const loadUser = (app) => {

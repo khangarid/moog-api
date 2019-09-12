@@ -1,31 +1,24 @@
-import Container from "typedi";
-import { YoutubeService } from "../services";
-import { Logger } from "winston";
-import { Feed } from "..";
+import { scheduleJob } from "node-schedule";
 
+import { youtubeService } from "../services";
+import { Feed } from "../interfaces";
+import { feedEvents } from "..";
 
-function feedJob() {
-  const youtubeService = Container.get(YoutubeService);
-  const agenda = Container.get<Agenda>("agenda");
-  const logger = Container.get<Logger>("logger");
+// scheduleJob('0 1 * * *', publishFeed);
 
-  agenda.define("start feed", async job => {
-    try {
-      const publishedAfter = "2019-08-01T00:00:00Z";
+setTimeout(() => {
+  publishFeed();
+}, 1000)
 
-      const youtube = await youtubeService.fetchFeed(publishedAfter);
+async function publishFeed() {
+  try {
+    const publishedAfter = "2019-08-01T00:00:00Z";
 
-      const feed: Feed = { youtube }
+    const youtube = await youtubeService.fetchFeed(publishedAfter);
 
-      agenda.now("new feed", feed);
+    const feed: Feed = { youtube }
 
-      logger.info(youtube);
-    } catch (error) {
-      logger.error(error);
-    }
-  });
-  
-  // agenda.schedule("in 2 seconds", "start feed");
+    feedEvents.emitFeed(feed);
+  } catch (error) {
+  }
 }
-
-export { feedJob };

@@ -17,4 +17,4 @@ const statSchema = new Schema({
   }
 }, { timestamps: true });
 
-export const StatModel = model<StatDocument>("Stat", statSchema);
+export const statModel = model<StatDocument>("Stat", statSchema);
