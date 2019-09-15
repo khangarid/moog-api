@@ -4,16 +4,15 @@ import { loadCore } from "./core";
 import { loadUser } from "./user";
 import { loadSong } from "./song";
 import { loadChart } from "./chart";
-import { loadFeed } from "./feed";
 
 const app = express();
 
 (async function() {
   await loadCore(app);
-  loadFeed(app);
   loadUser(app);
   loadSong(app);
   loadChart(app);
 })();
 
-export { app };
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
