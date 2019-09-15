@@ -1,11 +1,12 @@
 import { Application } from "express";
 
 import { songsController } from "./controllers/songsController";
-import { feedEvents } from "../feed";
-import { handleFeed } from "./handlers";
+import { scheduleNewSongsJob } from "./jobs";
+import { scheduleStatisticsJob } from "./jobs/statisticsJob";
 
 export const loadSong = (app: Application) => {
-  feedEvents.onFeed(handleFeed)
+  scheduleNewSongsJob('0 1 * * *');
+  scheduleStatisticsJob('0 1 * * *');
 
   /**
    * Routes

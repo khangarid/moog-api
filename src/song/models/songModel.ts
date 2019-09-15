@@ -9,10 +9,19 @@ export type SongModel = Model<SongDocument>;
 export const songSchema = new Schema({
   title: String,
   thumbnail: String,
-  youtube: {
-    videoId: String,
-    publishedAt: String,
-    description: String
+  youtubeId: { type: String, unique: true },
+  statistics: {
+    type: [{
+      createdAt: { type: Date, default: Date.now },
+      youtube: {
+        viewCount: Number,
+        likeCount: Number,
+        dislikeCount: Number,
+        favoriteCount: Number,
+        commentCount: Number
+      }
+    }],
+    default: []
   }
 }, { timestamps:  true });
 
