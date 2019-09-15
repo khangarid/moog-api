@@ -25,7 +25,6 @@ async function videos(videoIds: string[]): Promise<AxiosResponse<Youtube.VideosR
   const params = {
     part: "statistics",
     id: videoIds.join(","),
-    maxResults: 50,
     key: config.dataFeeds.youtubeApikey
   };
 

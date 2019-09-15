@@ -12,7 +12,7 @@ export function scheduleNewSongsJob(schedule: string) {
 }
 
 async function addNewSongs() {
-  const publishedAfter = "2019-07-21T00:00:00Z";
+  const publishedAfter = "2019-02-21T00:00:00Z";
   const response = await youtubeService.search(publishedAfter);
   const youtubeVideos = response.data.items;
 
