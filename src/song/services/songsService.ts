@@ -1,6 +1,4 @@
-import { BulkWriteOpResultObject } from "mongodb";
-
-import { Song, SongToStatistic } from "../interfaces";
+import { Song } from "../interfaces";
 import { songModel, SongDocument } from "../models";
 
 
@@ -24,15 +22,4 @@ async function getByVideoIds(videoIds: string[]): Promise<SongDocument[]> {
   return await songModel.find({ "youtubeId": { "$in": videoIds } });
 }
 
-async function updateStatistics(dict: SongToStatistic): Promise<BulkWriteOpResultObject> {
-  const bulkWrites = Object.keys(dict).map(songId => ({
-    updateOne: {
-        filter: { _id: songId },
-        update: { $push: { statistics: dict[songId] } }
-      }
-  }));
-
-  return await songModel.bulkWrite(bulkWrites);
-}
-
-export const songsService = { create, getAll, getById, getByVideoIds, updateStatistics, getOnlyYoutubeIds };
+export const songsService = { create, getAll, getById, getByVideoIds, getOnlyYoutubeIds };

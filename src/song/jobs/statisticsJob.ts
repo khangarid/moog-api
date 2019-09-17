@@ -1,7 +1,8 @@
 import { scheduleJob } from "node-schedule";
 
 import { youtubeService, songsService } from "../services";
-import { SongToStatistic } from "../interfaces";
+import { Statistic } from "../interfaces";
+import { statisticsService } from "../services/statisticsService";
 
 
 const YOUTUBE_MAX_RESULTS = 50;
@@ -10,7 +11,7 @@ export function scheduleStatisticsJob(schedule: string) {
   // scheduleJob(schedule, publishFeed);
 
   setTimeout(() => {
-    updateStatistics();
+    // updateStatistics();
   }, 1000)
 }
 
@@ -27,15 +28,14 @@ async function updateStatistics(): Promise<void> {
 
   const videos = responses
     .map(res => res.data.items)
-    .reduce((acc, items) => [...acc, ...items], [])
+    .reduce((acc, items) => [...acc, ...items], []);
 
-  const songToStatistic: SongToStatistic = videos.reduce((dict, video) => {
-    const songId = songs.find(song => song.youtubeId === video.id).id;
-    const statistics = { youtube: video.statistics };
-    return { ...dict, [songId]: statistics };
-  }, {})
+  const statistics: Statistic[] = videos.map(video => {
+    const song = songs.find(song => song.youtubeId === video.id).id;
+    return { song, youtube: video.statistics };
+  })
 
-  songsService.updateStatistics(songToStatistic)
+  statisticsService.create(statistics)
 }
 
 /**
